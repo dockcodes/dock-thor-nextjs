@@ -1,0 +1,48 @@
+{
+  "name": "@dockcodes/dock-thor-next",
+  "version": "1.0.0",
+  "description": "Next.js integration for DockTHOR error and performance monitoring",
+  "license": "MIT",
+  "author": "Jacek Sultan <j.sultan@dock.codes>",
+  "homepage": "https://dock.codes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dockcodes/dock-thor-next.git"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "error-monitoring",
+    "crash-reporting",
+    "performance-monitoring"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./edge": "./src/edge.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "peerDependencies": {
+    "next": ">=14",
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@dockcodes/dock-thor": "^1.0.0"
+  }
+}
